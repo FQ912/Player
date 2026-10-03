@@ -1,0 +1,24 @@
+[MASTER]
+ignore=test_linked_list.py
+
+extension-pkg-allow-list=
+    PyQt5.QtCore,
+    PyQt5.QtWidgets,
+    pygame
+
+[MESSAGES CONTROL]
+disable=
+    too-few-public-methods,
+    too-many-instance-attributes,
+    duplicate-code,
+    fixme,
+    invalid-name,
+    missing-function-docstring,
+    missing-class-docstring
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-args=6
+max-attributes=15
