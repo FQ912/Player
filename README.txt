@@ -2,12 +2,15 @@
 Скачать:   https://www.python.org/downloads/
 
 Шаг 1. Открыть cmd в папке проекта
+Шаг 2. Создать .venv
 
-Шаг 2. Активировать виртуальное окружение
+    python -m venv .venv
+
+Шаг 3. Активировать виртуальное окружение
 
     .venv\Scripts\activate.bat
 
-Шаг 3. Убедиться, что зависимости стоят
+Шаг 4. Убедиться, что зависимости стоят
 
     pip list
 
@@ -15,7 +18,7 @@
 
     pip install pyqt5 pygame pylint
 
-Шаг 4. ТЕСТЫ 
+Шаг 5. ТЕСТЫ 
 1)
     python -m unittest test_linked_list.py -v
 
@@ -30,7 +33,7 @@
 
     Your code has been rated at 10.00/10
 
-Шаг 5. ЗАПУСТИТЬ ПЛЕЕР
+Шаг 6. ЗАПУСТИТЬ ПЛЕЕР
 
     python main.py
 
