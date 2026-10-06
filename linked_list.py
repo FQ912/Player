@@ -347,13 +347,17 @@ class LinkedList:
         """Проверяет наличие данных в списке."""
         return self._find_node(item) is not None
 
-    def __reversed__(self) -> Iterator[LinkedListItem]:
-        """Возвращает обратный итератор по узлам списка."""
+    def __reversed__(self) -> Iterator[Any]:
+        """Возвращает обратный итератор по данным списка.
+
+        Yields:
+            Данные узлов в порядке от последнего к первому.
+        """
         node = self.last
         for _ in range(len(self)):
             if node is None:
                 break
-            yield node
+            yield node.data
             node = node.previous_item
 
     def __repr__(self) -> str:
@@ -425,4 +429,4 @@ class PlayList(LinkedList):
         if self.current_item is None:
             return None
         return self.current_item.data
-      
+        
